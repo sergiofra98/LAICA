@@ -1,0 +1,10 @@
+.btn{
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+    display: block;
+}
+
+.form-group span{
+    color: red;
+}

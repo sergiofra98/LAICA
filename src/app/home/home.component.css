@@ -1,0 +1,15 @@
+img{
+    margin:auto;
+    display: block;
+}
+
+h4{
+    text-align: center;
+}
+
+.btn{
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+    display: block;
+}

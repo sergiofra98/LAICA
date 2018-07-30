@@ -1,0 +1,124 @@
+<div class="cuerpo" id="consultar">
+  <h4>Filtros</h4>
+  <!-- <div class="filtros" [ngClass]="{activado: expandirFiltros}">
+    <form action="">
+      <div class="form-group">
+        <label for="nombreAnimal">Nombre de animal rescatado:</label>
+        <input class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="nombreAnimal">Fecha de Rescate:</label>
+        <input class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="nombreAnimal">Ubicación de rescate:</label>
+        <input class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="nombreAnimal">Laika:</label>
+        <input class="form-control" type="text">
+      </div>
+    </form>
+
+  </div> -->
+  <div class="colapsable">
+    <span (click)="expandirFiltros = !expandirFiltros" [ngClass]="{activado: expandirFiltros}">
+      <i class="fa fa-angle-down"></i>
+    </span>
+  </div>
+  <div>
+    <button class="btn btn-primary">Consultar Rescates</button>
+  </div>
+  <div class="resultados">
+    <div class="contenedor">
+      <div class="container perro">
+        <!-- EMPIEZAPOPUP -->
+        <!-- <ng-template #content let-c="close" let-d="dismiss">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Actualizar datos...</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="nombreAnimal">Nombre de animal rescatado
+                  <span>*</span>:</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Fecha de Rescate
+                  <span>*</span>:</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Ubicación de rescate
+                  <span>*</span>:</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Detalles de rescate
+                  <span>*</span>:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Veterinario
+                  <span>*</span>:</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Laika
+                  <span>*</span>:</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nombreAnimal">Seguimiento
+                  <span>*</span>:</label>
+                <select class="form-control" name="" id="">
+                  <option value="">En Veterinario</option>
+                  <option value="">Rescatado</option>
+                  <option value="">Adoptado</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Guardar Cambios</button>
+          </div>
+        </ng-template> -->
+        <!-- TERMINAPOPUP -->
+        <div class="col">
+          <div class="row">
+            <img src="assets/img/vicious_dog_0.png" alt="">
+          </div>
+          <div class="row">
+            Nombre:&nbsp;
+            <b> ELEN OJADO</b>
+          </div>
+          <div class="row">
+            Rescatista:&nbsp;
+            <b>ELRES CATISTA</b>
+          </div>
+          <div class="row">
+            Lugar:&nbsp;
+            <b>CULIACAN</b>
+          </div>
+          <div class="row">
+            Fecha:&nbsp;
+            <b>04/06/2018</b>
+          </div>
+          <div class="row">
+            Seguimiento:&nbsp;
+            <b>RESCATADO</b>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn" (click)="open(content)">
+            <i class="fa fa-edit"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

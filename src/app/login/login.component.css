@@ -1,0 +1,25 @@
+.col.cuerpo{
+    width: 300px;
+    padding: 12px;
+    background-color: white; 
+    border-radius: 12px;
+}
+
+img{
+    margin:auto;
+    display: block;
+}
+
+h4{
+    text-align: center;
+}
+
+.botones{
+    padding: 0 12px;
+}
+
+.botones .btn{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12px;
+}

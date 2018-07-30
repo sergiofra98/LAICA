@@ -1,0 +1,67 @@
+
+.filtros.activado{
+    max-height: 1000px;
+}
+
+.filtros{
+    overflow: hidden;
+    max-height: 85px;
+    margin-bottom: 8px;
+    transition: .3s;
+    border-bottom: #cecece 2px solid;
+}
+
+.colapsable{
+
+    background-color: #C1BCAC;
+    border-radius: 6px;
+    margin: 0 90px;
+}
+
+.colapsable span{
+    margin: auto;
+    display: block;
+    text-align: center;
+    transform: rotate(0deg);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.colapsable span.activado{
+    transform: rotate(180deg);
+}
+
+.colapsable.activado{
+    background-color: #a5a196;
+}
+
+.resultados{
+    margin-top: 18px;
+    border-radius: 4px;
+    background-color: #cecece;
+    overflow: hidden;
+    height: 580px;
+    border: #ccc 2px solid;
+    overflow-y: auto;
+}
+
+.perro{
+    background-color: white;
+    border: #ccc 2px solid;
+    padding: 6px;
+}
+
+.perro img{
+    display: block;
+    margin: 4px auto;
+    width: 100px;
+    height: 100px;
+}
+
+
+.btn{
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+    display: block;
+}

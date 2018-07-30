@@ -1,0 +1,70 @@
+<div class="cuerpo" id="administrar">
+  <h4>Administrar usuarios</h4>
+  <div class="row tabs">
+    <div class="col" [ngClass]="{'activo': tabSelector==0}" (click)="tabSelector = 0">Existentes</div>
+    <div class="col" [ngClass]="{'activo': tabSelector==1}" (click)="tabSelector = 1">Nuevas</div>
+  </div>
+  <div class="usuariosContenedor">
+    <div class="usuario" *ngIf="tabSelector === 0">
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalUsuario01">Actualizar datos...</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col">
+              Privilegio:
+              <b>Usuario</b>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary">Cambiar</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-warning">Restablecer Contraseña</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-danger">Borrar cuenta de usuario</button>
+            </div>
+
+          </div>
+        </div>
+      </ng-template>
+      <!-- TERMINAPOPUP -->
+      <div class="col">
+        <div class="row">
+          Nombre:&nbsp;
+          <b> natcristernal</b>
+        </div>
+        <div class="row">
+          Privilegio:&nbsp;
+          <b>Admin</b>
+        </div>
+        <div class="row">
+          <button class="btn" (click)="open(content, modalUsuario01)">
+            <i class="fa fa-edit"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="usuario nuevo" *ngIf="tabSelector === 1">
+      <div class="col">
+        <div class="row">
+          Nombre:&nbsp;
+          <b>cuentanueva12</b>
+        </div>
+        <div class="row">
+          <button class="btn btn-success">
+            Permitir
+          </button>
+          <button class="btn btn-danger">
+            Negar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

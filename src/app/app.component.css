@@ -1,0 +1,13 @@
+.cuerpo{
+    margin: 24px auto;
+    width: 90%;
+    padding: 24px;
+    background-color: white; 
+    border-radius: 12px;
+}
+
+.regresar button{
+    font-size: 22px;
+    padding: 0 12px;
+    padding-bottom: 10px;
+}
